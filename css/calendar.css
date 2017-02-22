@@ -1,0 +1,156 @@
+body{
+    
+    font-family: Tahoma; 
+}
+
+h1{
+    text-align: center;
+}
+
+#calendar{
+    
+    width: 100%;
+}
+
+
+#calendar a{
+    
+    color:#666;
+    text-decoration: none;
+}
+
+#calendar ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    clear: both;
+    width: 100%;
+    
+}
+
+#calendar .days li{
+    display: block;
+    float: left;
+    width: 14.2857142857%;
+    padding: 5px;
+    box-sizing: border-box;
+    border: solid 1px #ccc; 
+    margin-right: -1px;
+    margin-left: -1px;
+}
+
+#calendar .weekdays{
+    width: 98.50%
+    
+    
+}
+#calendar .weekdays li{
+    display: block;
+    float: left;
+    width: 14.2857142857%;
+    padding: 5px;
+    box-sizing: border-box;
+    margin-right: -1px;
+    margin-left: -1px;
+}
+
+#calendar ul.weekdays{
+    height: 30px;
+    background:black;
+    
+    
+    
+}
+
+#calendar ul.weekdays{
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 20px;
+    padding: 10px 6px;
+    color: white;
+
+}
+
+#calendar .days li{
+    height: 180px
+}
+
+
+#calendar .days li:hover{
+    background: #eee;
+}
+
+#calendar .date{
+    text-align: center;
+    margin-bottom: 5px;
+    padding: 5px;
+    background: black;
+    color:white;
+    font-weight: bold;
+    width: 25px;
+    border-radius: 50%;
+    float: right;
+}
+
+#calendar .event{
+    clear: both;
+    display: block;
+    font-size: 13px;
+    border-radius: 4px;
+    padding: 5px;
+    margin-top: 40px;
+    margin-bottom: 5px;
+    color: #666;
+    line-height: 14px;
+    background: #e4f2f2;
+    border: 1px solid #b5dbdc;
+    color: #fa6e3e;
+    text-decoration: none;
+    
+}
+
+#calendar .event-desc{
+    
+    color: #666;
+    
+}
+
+.other-month{
+    background: #f5f5f5
+}
+
+
+
+
+@media(max-width:768px){
+    .weekdays{
+        display: none;
+    }
+    
+    .other-month{
+        display: none;!important 
+    }
+    
+
+    
+    
+    #calendar .date{
+        float: none;
+    }
+    
+    #calendar .days li{
+    display: block;
+    float: none;
+    width: 100%; 
+    padding: 10px;
+    border: solid 1px black; 
+    margin-right: -1px;
+    margin-left: -1px;
+}
+    
+    #calendar-wrap{
+        width: 80%; 
+        margin: 28px auto;
+    }
+
+}
